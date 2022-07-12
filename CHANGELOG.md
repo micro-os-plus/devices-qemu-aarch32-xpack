@@ -8,6 +8,8 @@ and close existing issues and pull requests.
 
 ## 2022-07-12
 
+* v3.0.1
+* 171e18c exception-handlers.cpp: fix header
 * v3.0.0
 * 3d4c31a rework as aarch32
 * copy/paste devices-qemu-cortexa-xpack
