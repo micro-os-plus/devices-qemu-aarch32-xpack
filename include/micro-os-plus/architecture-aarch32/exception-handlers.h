@@ -10,45 +10,30 @@
  * be obtained from https://opensource.org/licenses/MIT/.
  */
 
-// ----------------------------------------------------------------------------
-
-#if defined(__ARM_EABI__)
-
-// ----------------------------------------------------------------------------
-
-#if defined(MICRO_OS_PLUS_INCLUDE_CONFIG_H)
-#include <micro-os-plus/config.h>
-#endif // MICRO_OS_PLUS_INCLUDE_CONFIG_H
-
-// #include <micro-os-plus/device.h>
-#include <micro-os-plus/architecture-cortexa/exception-handlers.h>
-
-// #include <micro-os-plus/diag/trace.h>
+#ifndef MICRO_OS_PLUS_ARCHITECTURE_AARCH32_EXCEPTION_HANDLERS_H_
+#define MICRO_OS_PLUS_ARCHITECTURE_AARCH32_EXCEPTION_HANDLERS_H_
 
 // ----------------------------------------------------------------------------
 
-// using namespace micro_os_plus;
+// The file is also included in assembly.
 
-// ----------------------------------------------------------------------------
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
 
 #if defined(__ARM_ARCH_7A__)
 
-extern "C"
-{
-  void
-  c_irq_handler (void);
-}
-
-void
-c_irq_handler (void)
-{
-  return;
-}
+// TODO
 
 #endif // defined(__ARM_ARCH_7A__)
 
+#if defined(__cplusplus)
+}
+#endif
+
 // ----------------------------------------------------------------------------
 
-#endif // defined(__ARM_EABI__)
+#endif // MICRO_OS_PLUS_ARCHITECTURE_AARCH32_EXCEPTION_HANDLERS_H_
 
 // ----------------------------------------------------------------------------

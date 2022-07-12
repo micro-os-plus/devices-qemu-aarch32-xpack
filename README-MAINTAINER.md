@@ -1,7 +1,7 @@
-[![license](https://img.shields.io/github/license/micro-os-plus/devices-qemu-cortexa-xpack)](https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/blob/xpack/LICENSE)
-[![CI on Push](https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/workflows/CI%20on%20Push/badge.svg)](https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/actions?query=workflow%3A%22CI+on+Push%22)
-[![GitHub issues](https://img.shields.io/github/issues/micro-os-plus/devices-qemu-cortexa-xpack.svg)](https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/issues/)
-[![GitHub pulls](https://img.shields.io/github/issues-pr/micro-os-plus/devices-qemu-cortexa-xpack.svg)](https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/pulls)
+[![license](https://img.shields.io/github/license/micro-os-plus/devices-qemu-aarch32-xpack)](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/blob/xpack/LICENSE)
+[![CI on Push](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/workflows/CI%20on%20Push/badge.svg)](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/actions?query=workflow%3A%22CI+on+Push%22)
+[![GitHub issues](https://img.shields.io/github/issues/micro-os-plus/devices-qemu-aarch32-xpack.svg)](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/issues/)
+[![GitHub pulls](https://img.shields.io/github/issues-pr/micro-os-plus/devices-qemu-aarch32-xpack.svg)](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/pulls)
 
 # Maintainer info
 
@@ -9,28 +9,28 @@
 
 The project is hosted on GitHub:
 
-- <https://github.com/micro-os-plus/devices-qemu-cortexa-xpack.git>
+- <https://github.com/micro-os-plus/devices-qemu-aarch32-xpack.git>
 
 To clone the stable branch (`xpack`), run the following commands in a
 terminal (on Windows use the _Git Bash_ console):
 
 ```sh
-rm -rf ~/Work/device-qemu-cortexa-xpack.git && \
+rm -rf ~/Work/device-qemu-aarch32-xpack.git && \
 mkdir -p ~/Work && \
 git clone \
-  https://github.com/micro-os-plus/devices-qemu-cortexa-xpack.git \
-  ~/Work/device-qemu-cortexa-xpack.git
+  https://github.com/micro-os-plus/devices-qemu-aarch32-xpack.git \
+  ~/Work/device-qemu-aarch32-xpack.git
 ```
 
 For development purposes, clone the `xpack-develop` branch:
 
 ```sh
-rm -rf ~/Work/device-qemu-cortexa-xpack.git && \
+rm -rf ~/Work/device-qemu-aarch32-xpack.git && \
 mkdir -p ~/Work && \
 git clone \
   --branch xpack-develop \
-  https://github.com/micro-os-plus/devices-qemu-cortexa-xpack.git \
-  ~/Work/device-qemu-cortexa-xpack.git
+  https://github.com/micro-os-plus/devices-qemu-aarch32-xpack.git \
+  ~/Work/device-qemu-aarch32-xpack.git
 ```
 
 ## Prerequisites
@@ -59,13 +59,13 @@ CppStyle plug-in.
 - push the `xpack-develop` branch to GitHub
 - the `postversion` npm script should also update tags via `git push origin --tags`
 - wait for the CI job to complete
-  (<https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/actions/workflows/CI.yml>)
+  (<https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/actions/workflows/CI.yml>)
 - `npm publish --tag next` (use `npm publish --access public` when
   publishing for the first time)
 
 The version is visible at:
 
-- <https://www.npmjs.com/package/@micro-os-plus/devices-qemu-cortexa?activeTab=versions>
+- <https://www.npmjs.com/package/@micro-os-plus/devices-qemu-aarch32?activeTab=versions>
 
 ## Testing
 
@@ -74,7 +74,7 @@ The project includes unit tests.
 To run them, run:
 
 ```sh
-cd device-qemu-cortexa-xpack.git
+cd device-qemu-aarch32-xpack.git
 xpm run install-all
 xpm run test
 ```
@@ -82,7 +82,7 @@ xpm run test
 ## Continuous Integration
 
 The CI tests are performed on GitHub Actions, as the
-[CI on Push](https://github.com/micro-os-plus/devices-qemu-cortexa-xpack/actions?query=workflow%3A%22CI+on+Push%22)
+[CI on Push](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/actions?query=workflow%3A%22CI+on+Push%22)
 workflow.
 
 ## Update the repo
@@ -98,14 +98,14 @@ When the package is considered stable:
 
 When the release is considered stable, promote it as `latest`:
 
-- `npm dist-tag ls @micro-os-plus/devices-qemu-cortexa`
-- `npm dist-tag add @micro-os-plus/devices-qemu-cortexa@2.1.0 latest`
-- `npm dist-tag ls @micro-os-plus/devices-qemu-cortexa`
+- `npm dist-tag ls @micro-os-plus/devices-qemu-aarch32`
+- `npm dist-tag add @micro-os-plus/devices-qemu-aarch32@2.1.0 latest`
+- `npm dist-tag ls @micro-os-plus/devices-qemu-aarch32`
 
 ## Share on Twitter
 
 - in a separate browser windows, open [TweetDeck](https://tweetdeck.twitter.com/)
 - using the `@micro_os_plus` account
-- paste the release name like **µOS++ device-qemu-cortexa v2.1.0 released**
+- paste the release name like **µOS++ device-qemu-aarch32 v2.1.0 released**
 - paste the link to the Web page release
 - click the **Tweet** button
