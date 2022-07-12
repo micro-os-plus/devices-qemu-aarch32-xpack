@@ -1,6 +1,6 @@
 {
   "name": "@micro-os-plus/devices-qemu-aarch32",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A source library xPack with the µOS++ QEMU AArch32 devices support",
   "main": "",
   "scripts": {
