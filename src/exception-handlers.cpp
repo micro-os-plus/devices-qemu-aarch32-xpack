@@ -21,7 +21,7 @@
 #endif // MICRO_OS_PLUS_INCLUDE_CONFIG_H
 
 // #include <micro-os-plus/device.h>
-#include <micro-os-plus/architecture-cortexa/exception-handlers.h>
+#include <micro-os-plus/architecture-aarch32/exception-handlers.h>
 
 // #include <micro-os-plus/diag/trace.h>
 
