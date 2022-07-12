@@ -99,7 +99,7 @@ at any time.
 
 ### Status
 
-The QEMU AArch32 support is work in progress.
+The QEMU AArch32 support is functional but minimalistic.
 
 ### Limitations
 
@@ -174,9 +174,7 @@ backwards incompatible changes are introduced to the public API.
 The incompatible changes, in reverse chronological order,
 are:
 
-- v2.x: interrupt-vectors & exception-handlers moved here; Reset_Handler
-  renamed with capital letters
-- v1.x: initial release
+- v3.x: first AArch32 release
 
 ## License
 
