@@ -43,7 +43,7 @@ micro_os_plus_devices_qemu_aarch32_dependency = declare_dependency(
   ],
   dependencies: [
     # None
-  ],
+  ]
 )
 
 message('+ -I include')
