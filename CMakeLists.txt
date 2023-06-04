@@ -14,7 +14,7 @@
 
 # This file is intended to be consumed by applications with:
 #
-# `add_subdirectory("xpacks/micro-os-plus-devices-qemu-aarch32")`
+# `add_subdirectory("xpacks/@micro-os-plus/devices-qemu-aarch32")`
 #
 # The result is an interface library that can be added to the linker with:
 #

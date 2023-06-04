@@ -14,7 +14,7 @@
 
 # This file is intended to be consumed by applications with:
 #
-# `subdir('xpacks/micro-os-plus-devices-qemu-aarch32')`
+# `subdir('xpacks/@micro-os-plus/devices-qemu-aarch32')`
 #
 # The result is a dependency that can be referred as:
 #
