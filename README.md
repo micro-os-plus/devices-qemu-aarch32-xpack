@@ -236,6 +236,7 @@ backwards incompatible changes are introduced to the public API.
 The incompatible changes, in reverse chronological order,
 are:
 
+- v4.x: use full name MICRO_OS_PLUS_DEVICE_QEMU_CORTEX_A15 macro
 - v3.x: first AArch32 release
 
 (previous releases were part of devices-qemu-cortexa)
