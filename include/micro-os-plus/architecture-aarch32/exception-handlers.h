@@ -23,6 +23,19 @@ extern "C"
 
 #if defined(__ARM_ARCH_7A__)
 
+#if !defined(__ASSEMBLY__)
+
+#include <stdint.h>
+
+  void
+  c_irq_handler (void);
+
+  void
+  c_data_abort_handler (uint32_t dfsr, uint32_t dfar);
+
+#endif // !defined(__ASSEMBLY__)
+
+// Definitions used in assembly.
 // TODO
 
 #endif // defined(__ARM_ARCH_7A__)

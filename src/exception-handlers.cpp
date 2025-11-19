@@ -22,20 +22,48 @@
 // #include <micro-os-plus/device.h>
 #include <micro-os-plus/architecture-aarch32/exception-handlers.h>
 
-// #include <micro-os-plus/diag/trace.h>
+#include <micro-os-plus/diag/trace.h>
 
 // ----------------------------------------------------------------------------
 
-// using namespace micro_os_plus;
+using namespace micro_os_plus;
 
 // ----------------------------------------------------------------------------
 
 #if defined(__ARM_ARCH_7A__)
 
-extern "C"
+void
+c_data_abort_handler (uint32_t dfsr, uint32_t dfar)
 {
-  void
-  c_irq_handler (void);
+  trace::printf ("Data Abort Exception!\n");
+  trace::printf ("DFSR (Data Fault Status): 0x%08X\n", dfsr);
+  trace::printf ("DFAR (Fault Address): 0x%08X\n", dfar);
+
+  // Decode fault type
+  uint32_t fault_status = dfsr & 0x40F; // Bits [10,3:0]
+
+  switch (fault_status)
+    {
+    case 0x001:
+      trace::printf ("Alignment fault\n");
+      break;
+    case 0x002:
+      trace::printf ("Debug event\n");
+      break;
+    case 0x003:
+      trace::printf ("Access flag fault (section)\n");
+      break;
+    // Add more cases as needed
+    default:
+      trace::printf ("Unknown fault type: 0x%03X\n", fault_status);
+      break;
+    }
+
+  // For now, halt the system
+  while (1)
+    {
+      __asm__ ("wfi");
+    }
 }
 
 void

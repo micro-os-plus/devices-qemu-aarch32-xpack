@@ -60,8 +60,39 @@ prefetch_handler:
 
     .balign 4
 data_handler:
-    wfi
-    b     data_handler
+    // Save return address (adjust for data abort)
+    sub     lr, lr, #8
+
+    // Save state using SRS (Store Return State)
+    srsfd   sp!, #0x1f          // Save LR and SPSR to System mode stack
+
+    // Switch to System mode
+    cps     #0x1f
+
+    // Save caller-saved registers
+    push    {r0-r3, r12}
+
+    // Ensure stack is 8-byte aligned (AAPCS requirement)
+    and     r1, sp, #4          // Check if SP is 8-byte aligned
+    sub     sp, sp, r1          // Adjust if needed
+    push    {r1, lr}            // Save alignment and LR
+
+    // Read fault status and address registers
+    mrc     p15, 0, r0, c5, c0, 0   // Read DFSR (Data Fault Status Register)
+    mrc     p15, 0, r1, c6, c0, 0   // Read DFAR (Data Fault Address Register)
+
+    // Call C handler: c_data_abort_handler(dfsr, dfar)
+    bl      c_data_abort_handler
+
+    // Restore stack alignment and LR
+    pop     {r1, lr}
+    add     sp, sp, r1
+
+    // Restore caller-saved registers
+    pop     {r0-r3, r12}
+
+    // Return from exception using RFE (Return From Exception)
+    rfefd   sp!
 
     .balign 4
 irq_handler:
