@@ -1,11 +1,11 @@
 {
   "name": "@micro-os-plus/devices-qemu-aarch32",
-  "version": "4.0.0",
+  "version": "4.1.0-pre",
   "description": "A source code library with the µOS++ QEMU AArch32 devices support",
   "main": "",
   "scripts": {
     "npm-install": "npm install",
-    "pack": "npm pack",
+    "npm-pack": "npm pack",
     "npm-version-patch": "npm version patch",
     "npm-version-minor": "npm version minor",
     "postversion": "git push origin --all && git push origin --tags",

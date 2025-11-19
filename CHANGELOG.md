@@ -6,9 +6,21 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2025-11-19
+
+* v4.1.0
+* 9494bad add xpack-development
+* 8645638 reset-handler.S initialise MMU
+* b800022 add c_data_abort_handler()
+
+## 2025-10-07
+
+* 0a2308c update copyright notices
+
 ## 2023-11-28
 
-* v4.0.0
+* 310cb18 4.0.0
+* 115226b prepare v4.0.0
 * faccbfa device.h: use full name for macro
 * 882b302 README updates
 * cfd6e50 package.json: cosmetise scripts
