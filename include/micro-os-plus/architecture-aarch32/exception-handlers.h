@@ -35,8 +35,8 @@ extern "C"
 
 #endif // !defined(__ASSEMBLY__)
 
-// Definitions used in assembly.
-// TODO
+  // Definitions used in assembly.
+  // TODO
 
 #endif // defined(__ARM_ARCH_7A__)
 
