@@ -15,9 +15,9 @@
 
 // ----------------------------------------------------------------------------
 
-#include <micro-os-plus/device.h>
+#include "micro-os-plus/device.h"
 
-#include <micro-os-plus/diag/trace.h>
+#include "micro-os-plus/diag/trace.h"
 
 // ----------------------------------------------------------------------------
 
