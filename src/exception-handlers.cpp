@@ -31,8 +31,10 @@ void
 c_data_abort_handler (uint32_t dfsr, uint32_t dfar)
 {
   trace::printf ("Data Abort Exception!\n");
-  trace::printf ("DFSR (Data Fault Status): 0x%08X\n", dfsr);
-  trace::printf ("DFAR (Fault Address): 0x%08X\n", dfar);
+  trace::printf ("DFSR (Data Fault Status): 0x%08X\n",
+                 static_cast<unsigned int> (dfsr));
+  trace::printf ("DFAR (Fault Address): 0x%08X\n",
+                 static_cast<unsigned int> (dfar));
 
   // Decode fault type
   uint32_t fault_status = dfsr & 0x40F; // Bits [10,3:0]
@@ -50,7 +52,8 @@ c_data_abort_handler (uint32_t dfsr, uint32_t dfar)
       break;
     // Add more cases as needed
     default:
-      trace::printf ("Unknown fault type: 0x%03X\n", fault_status);
+      trace::printf ("Unknown fault type: 0x%03X\n",
+                     static_cast<unsigned int> (fault_status));
       break;
     }
 
