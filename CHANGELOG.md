@@ -6,9 +6,40 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2026-07-31
+
+* 77d0347 xcdl-package.jsonc
+* e514f6a re-generate top xcdl
+* e4d3fd5 re-generate top commons
+* 1edf6f6 include cosmetics
+
+## 2026-07-28
+
+* 2635e4f xcdl-package.jsonc update
+* f09095c fix includes
+* aad8ae4 exception-handlers.cpp fix trace::printf() format
+* b58e9f2 cosmetics for #if defined(__cplusplus)
+
+## 2026-07-22
+
+* 20d987f xcdl export
+* fefbd5d re-work includes
+* ba4e489 update copyright notices
+* 33ebcab re-generate top commons
+
+## 2026-06-11
+
+* f714802 prefer project-config.h
+
+## 2026-06-06
+
+* 4a8e839 use __has_include(<micro-os-plus/config.h>)
+* 3ebc07d copyright update 2026
+
 ## 2025-11-19
 
-* v4.1.0
+* 2fc81e0 4.1.0
+* b3a6e62 prepare v4.1.0
 * 9494bad add xpack-development
 * 8645638 reset-handler.S initialise MMU
 * b800022 add c_data_abort_handler()
