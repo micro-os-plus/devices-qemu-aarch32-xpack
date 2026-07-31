@@ -32,7 +32,7 @@
 
 #include "micro-os-plus/architecture.h"
 
-#include <micro-os-plus/architecture-aarch32/exception-handlers.h>
+#include "micro-os-plus/architecture-aarch32/exception-handlers.h"
 
 // ----------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ extern "C"
   SystemInit (void);
   extern void
   SystemCoreClockUpdate (void);
-#endif
+#endif // 0-1
 
   // --------------------------------------------------------------------------
 
