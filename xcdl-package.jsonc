@@ -44,6 +44,7 @@
             "a15"
           ],
           "customDefine": "MICRO_OS_PLUS_DEVICE_QEMU_CORTEX"
+          // "MICRO_OS_PLUS_DEVICE_QEMU_CORTEX_A15"
         }
       ]
     }
