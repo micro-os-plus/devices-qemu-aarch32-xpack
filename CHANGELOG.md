@@ -6,8 +6,15 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2026-08-04
+
+* v5.0.0
+* 1195f77 re-generate top commons
+
 ## 2026-07-31
 
+* 500b633 package*.json update
+* 135f275 CHANGELOG update
 * 77d0347 xcdl-package.jsonc
 * e514f6a re-generate top xcdl
 * e4d3fd5 re-generate top commons
