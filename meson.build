@@ -27,7 +27,7 @@
 # -----------------------------------------------------------------------------
 
 # A source code library with the µOS++ QEMU AArch32 devices support.
-message('Processing xPack @micro-os-plus/devices-qemu-aarch32...')
+message('Processing xpm package @micro-os-plus/devices-qemu-aarch32...')
 
 # -----------------------------------------------------------------------------
 
