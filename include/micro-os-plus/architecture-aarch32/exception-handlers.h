@@ -23,7 +23,7 @@ extern "C"
 
 #if defined(__ARM_ARCH_7A__)
 
-#if !defined(__ASSEMBLY__)
+#if !defined(__ASSEMBLER__)
 
 #include <stdint.h>
 
@@ -33,7 +33,7 @@ extern "C"
   void
   c_data_abort_handler (uint32_t dfsr, uint32_t dfar);
 
-#endif // !defined(__ASSEMBLY__)
+#endif // !defined(__ASSEMBLER__)
 
   // Definitions used in assembly.
   // TODO
