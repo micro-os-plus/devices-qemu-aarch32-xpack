@@ -6,9 +6,18 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2026-11-07
+
+* v6.0.0
+* 6f54a46 DEVICE_QEMU_CORTEX_CORE_A15
+* fe82594 __ASSEMBLER__
+* 56941d5 device.qemu-aarch32 (singular)
+* 394fa81 re-generate top commons
+
 ## 2026-09-09
 
-* v5.0.1
+* 722189d 5.0.1
+* 56d888e prepare v5.0.1
 * c7f907b re-format
 
 ## 2026-09-08
