@@ -1,5 +1,7 @@
 {
   "descriptiveName": "QEMU AArch32 devices",
+  "permalinkName": "devices-qemu-aarch32",
+  "preferredName": "QEMU AArch32 devices",
   "githubActionsNodeVersions": [
     "24"
   ],
